@@ -14,7 +14,6 @@ _G.GCOLLECT_FREE_ITEMS = true
 _G.GMAX_ZONE_UPGRADE_COST = 200000
 _G.GPOTIONS = {"Coins","Lucky","Treasure Hunter","Walkspeed","Diamonds","Damage"}
 _G.GPOTIONS_MAX_TIER = 19
-_G.GUSE_SPRINKLERS = true
 _G.GUSE_FLAGS = {"Fortune Flag","Diamonds Flag","Coins Flag"}
 _G.GENCHANTS = {"Diamonds", "Diamonds", "Criticals", "Criticals", "Strong Pets", "Strong Pets"}
 _G.GWEBHOOK_USERID = "" -- your discord userID, not your name. numerical id.
