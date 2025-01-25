@@ -3,8 +3,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/r6dt/farm/main/Del-Co
 wait(10)
 script_key = "ipXBywOqWcuQMMEBBCmVrvDBXrSRfJLd";
 _G.GPROGRESS_MODE = "Hybrid"
-_G.GHATCH_CHARGED_EGGS = true
-_G.GPAW_RAFFLE_ENTRIES = 400
+_G.GDO_CANNON_TYCOON_EVENT = true
 _G.GGFX_MODE = 1
 _G.GRANK_TO = 99
 _G.GZONE_TO = 999
@@ -14,7 +13,7 @@ _G.GMAX_EQUIP_SLOTS = 99
 _G.GHOLD_GIFTS = false
 _G.GHOLD_BUNDLES = true
 _G.GCOLLECT_FREE_ITEMS = true
-_G.GMAX_ZONE_UPGRADE_COST = 40000000
+_G.GMAX_ZONE_UPGRADE_COST = 200000
 _G.GPOTIONS = {"Coins","Lucky","Treasure Hunter","Walkspeed","Diamonds","Damage"}
 _G.GPOTIONS_MAX_TIER = 19
 _G.GUSE_SPRINKLERS = true
