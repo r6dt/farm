@@ -3,7 +3,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/r6dt/farm/main/Del-Co
 wait(10)
 script_key = "ipXBywOqWcuQMMEBBCmVrvDBXrSRfJLd";
 _G.GPROGRESS_MODE = "Hybrid"
-_G.GDO_PETGAMES_EVENT = true
 _G.GHATCH_CHARGED_EGGS = true
 _G.GPAW_RAFFLE_ENTRIES = 400
 _G.GGFX_MODE = 1
@@ -26,18 +25,6 @@ _G.GWEBHOOK_LINK = "https://discord.com/api/webhooks/1330044667114291303/dDUp-QK
 _G.GMAIL_RECEIVERS = {"SniperMealtime"}  -- an account to receive hatched Huges etc
 _G.GMAIL_ITEMS = {
   ["All Huges"] = {Class = "Pet", Id = "All Huges", Amount = 1},
-  ["Normal Guard Bunnys"] = {Class = "Pet", Id = "Guard Bunny", MinAmount = 100},
-  ["Golden Guard Bunnys"] = {Class = "Pet", Id = "Guard Bunny", MinAmount = 50, IsGold = true},
-  ["RB Guard Bunnys"] = {Class = "Pet", Id = "Guard Bunny", MinAmount = 25, IsRainbow = true},
-  ["Shiny Normal Guard Bunnys"] = {Class = "Pet", Id = "Guard Bunny", MinAmount = 10, IsShiny = true},
-  ["Shiny Golden Guard Bunnys"] = {Class = "Pet", Id = "Guard Bunny", MinAmount = 10, IsGold = true, IsShiny = true},
-  ["Shiny RB Guard Bunnys"] = {Class = "Pet", Id = "Guard Bunny", MinAmount = 10, IsRainbow = true, IsShiny = true},
-  ["Normal Guard Hydra"] = {Class = "Pet", Id = "Guard Hydra", MinAmount = 40},
-  ["Golden Guard Hydras"] = {Class = "Pet", Id = "Guard Hydra", MinAmount = 20, IsGold = true},
-  ["RB Guard Hydras"] = {Class = "Pet", Id = "Guard Hydra", MinAmount = 10, IsRainbow = true},
-  ["Shiny Normal Guard Hydras"] = {Class = "Pet", Id = "Guard Hydra", MinAmount = 5, IsShiny = true},
-  ["Shiny Golden Guard Hydras"] = {Class = "Pet", Id = "Guard Hydra", MinAmount = 5, IsGold = true, IsShiny = true},
-  ["Shiny RB Guard Hydras"] = {Class = "Pet", Id = "Guard Hydra", MinAmount = 5, IsRainbow = true, IsShiny = true},
   ["Hype Egg"] = {Class = "Lootbox", Id = "Hype Egg", MinAmount = 1},
   ["Daycare egg"] = {Class = "Egg", Id = "Huge Machine Egg 4", MinAmount = 1},
   ["Secret pet1"] = {Class = "Pet", Id = "Rainbow Swirl", MinAmount = 1, AllVariants = true},
