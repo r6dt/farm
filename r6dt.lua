@@ -14,7 +14,6 @@ _G.GMAX_EGG_SLOTS = 99
 _G.GMAX_EQUIP_SLOTS = 99
 _G.GHOLD_GIFTS = false
 _G.GHOLD_BUNDLES = true
-_G.GCOLLECT_FREE_ITEMS = true
 _G.GMAX_ZONE_UPGRADE_COST = 200000
 _G.GPOTIONS = {"Coins","Lucky","Treasure Hunter","Walkspeed","Diamonds","Damage"}
 _G.GPOTIONS_MAX_TIER = 19
