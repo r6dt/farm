@@ -4,7 +4,6 @@ wait(10)
 script_key = "ipXBywOqWcuQMMEBBCmVrvDBXrSRfJLd";
 _G.GPROGRESS_MODE = "Hybrid"
 _G.GDO_CANNON_TYCOON_EVENT = true
-_G.GHATCH_CHARGED_EGGS = true
 _G.GGFX_MODE = 1
 _G.GRANK_TO = 99
 _G.GZONE_TO = 999
