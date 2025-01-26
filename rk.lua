@@ -1,5 +1,5 @@
 repeat wait(10) until game:IsLoaded()
-script_key = "ipXBywOqWcuQMMEBBCmVrvDBXrSRfJLd";
+script_key = "LMqaOnUfWfeahIJNResaOVUBBjNgegRV";
 _G.GPROGRESS_MODE = "Hybrid"
 _G.GGFX_MODE = 1
 _G.GRANK_TO = 99
