@@ -1,7 +1,7 @@
 repeat wait(10) until game:IsLoaded()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/r6dt/farm/main/Del-CoreGui.lua"))()
 wait(10)
-script_key = "ipXBywOqWcuQMMEBBCmVrvDBXrSRfJLd";
+script_key = "elougpKEQqqjAFgIqqQPSLXygNLyvhjc";
 _G.GPROGRESS_MODE = "Hybrid"
 _G.GDO_CANNON_TYCOON_EVENT = true
 _G.GCANNON_TYCOON_FPS = 5
