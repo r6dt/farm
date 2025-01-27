@@ -1,5 +1,5 @@
 repeat wait(10) until game:IsLoaded()
-script_key = "elougpKEQqqjAFgIqqQPSLXygNLyvhjc";
+script_key = "ipXBywOqWcuQMMEBBCmVrvDBXrSRfJLd";
 _G.GPROGRESS_MODE = "Hybrid"
 _G.GDO_CANNON_TYCOON_EVENT = true
 _G.GCANNON_TYCOON_FPS = 5
