@@ -23,7 +23,7 @@ _G.GMAIL_ITEMS = {
   ["Secret pet2"] = {Class = "Pet", Id = "Banana", MinAmount = 1, AllVariants = true},
   ["Secret pet3"] = {Class = "Pet", Id = "Coin", MinAmount = 1, AllVariants = true},
   ["Secret pet4"] = {Class = "Pet", Id = "Lucky Block", MinAmount = 1, AllVariants = true},
-  ["Normal Fireball Cat"] = {Class = "Pet", Id = "Fireball Cat", MinAmount = 100},
+  ["Normal Fireball Cat"] = {Class = "Pet", Id = "Fireball Cat", MinAmount = 50},
   ["Golden Fireball Cat"] = {Class = "Pet", Id = "Fireball Cat", MinAmount = 25, IsGold = true},
   ["RB Fireball Cat"] = {Class = "Pet", Id = "Fireball Cat", MinAmount = 10, IsRainbow = true},
   ["Shiny Normal Fireball Cat"] = {Class = "Pet", Id = "Fireball Cat", MinAmount = 1, IsShiny = true},
