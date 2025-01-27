@@ -1,23 +1,11 @@
 repeat wait(10) until game:IsLoaded()
 script_key = "ipXBywOqWcuQMMEBBCmVrvDBXrSRfJLd";
-_G.GPROGRESS_MODE = "Hybrid"
 _G.GDO_CANNON_TYCOON_EVENT = true
 _G.GCONVERT_HELLFIRE_CRYSTALS = true
 _G.GCANNON_TYCOON_FPS = 5
 _G.GHATCH_CHARGED_EGGS = true
 _G.GGFX_MODE = 1
-_G.GRANK_TO = 99
 _G.GZONE_TO = 999
-_G.GHATCH_SPEED_MS = 0
-_G.GMAX_EGG_SLOTS = 99
-_G.GMAX_EQUIP_SLOTS = 99
-_G.GHOLD_GIFTS = false
-_G.GHOLD_BUNDLES = true
-_G.GMAX_ZONE_UPGRADE_COST = 200000
-_G.GPOTIONS = {"Coins","Lucky","Treasure Hunter","Walkspeed","Diamonds","Damage"}
-_G.GPOTIONS_MAX_TIER = 19
-_G.GUSE_SPRINKLERS = true
-_G.GUSE_FLAGS = {"Hasty Flag"}
 _G.GENCHANTS = {"Lucky Eggs", "Lucky Eggs", "Lucky Eggs", "Coins", "Fortune", "Strong Pets"}
 _G.GWEBHOOK_USERID = "" -- your discord userID, not your name. numerical id.
 _G.GWEBHOOK_LINK = "https://discord.com/api/webhooks/1330044667114291303/dDUp-QKB4KPghtF5s22-WVvQOlJ8xd1m8-kCJgOD848pEM9gOrEdd1ZhrCTkSrveWVTv" -- a webhook URL from your private discord channel.
