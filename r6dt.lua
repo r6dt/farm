@@ -32,3 +32,4 @@ _G.GMAIL_ITEMS = {
 loadstring(game:HttpGet("https://raw.githubusercontent.com/sxdasfvas/test/main/gscripts.lua"))()
 wait(300)
 setfpscap(5)
+print("Fps 5")
