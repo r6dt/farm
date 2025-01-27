@@ -2,8 +2,6 @@ repeat wait(10) until game:IsLoaded()
 script_key = "ipXBywOqWcuQMMEBBCmVrvDBXrSRfJLd";
 _G.GDO_CANNON_TYCOON_EVENT = true
 _G.GCANNON_TYCOON_FPS = 5
-_G.GUSE_CANNON_CONSUMABLES = true
-_G.GUSE_HELLFIRE_CORES = true
 _G.GCONVERT_HELLFIRE_CRYSTALS = true
 _G.GHATCH_CHARGED_EGGS = true
 _G.GGFX_MODE = 1
