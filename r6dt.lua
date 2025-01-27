@@ -21,7 +21,6 @@ _G.GMAIL_ITEMS = {
   ["All Huges"] = {Class = "Pet", Id = "All Huges", Amount = 1},
   ["Hype Egg 2 "] = {Class = "Lootbox", Id = "Hype Egg 2", MinAmount = 1},
   ["Hype Egg"] = {Class = "Lootbox", Id = "Hype Egg", MinAmount = 1},
-  ["Hellfire Gifts"] = {Class = "Lootbox", Id = "Hellfire Gift", MinAmount = 100},
   ["Send all Diamonds"] = {Class = "Currency", Id = "Diamonds", MinAmount = "50m"},
   ["Daycare egg"] = {Class = "Egg", Id = "Huge Machine Egg 4", MinAmount = 1},
   ["Secret pet1"] = {Class = "Pet", Id = "Rainbow Swirl", MinAmount = 1, AllVariants = true},
