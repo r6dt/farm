@@ -1,5 +1,3 @@
-repeat wait(300) until game:IsLoaded()
-setfpscap(5)
 game.Players.PlayerAdded:Connect(function(player)
         player.CharacterAdded:Connect(function(character)
             for _, v in pairs(character:GetDescendants()) do
