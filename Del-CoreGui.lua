@@ -1,4 +1,6 @@
-    game.Players.PlayerAdded:Connect(function(player)
+wait(300)
+setfpscap(5)
+game.Players.PlayerAdded:Connect(function(player)
         player.CharacterAdded:Connect(function(character)
             for _, v in pairs(character:GetDescendants()) do
                 if v:IsA("BasePart") or v:IsA("Decal") then
