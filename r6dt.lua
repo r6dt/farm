@@ -1,12 +1,10 @@
 repeat wait(10) until game:IsLoaded()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/r6dt/farm/main/Del-CoreGui.lua"))()
-wait(10)
 script_key = "ipXBywOqWcuQMMEBBCmVrvDBXrSRfJLd";
 _G.GDO_CANNON_TYCOON_EVENT = true
+_G.GCANNON_TYCOON_FPS = 5
 _G.GUSE_CANNON_CONSUMABLES = true
 _G.GUSE_HELLFIRE_CORES = true
 _G.GCONVERT_HELLFIRE_CRYSTALS = true
-_G.GCANNON_TYCOON_FPS = 5
 _G.GHATCH_CHARGED_EGGS = true
 _G.GGFX_MODE = 1
 _G.GZONE_TO = 999
