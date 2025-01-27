@@ -1,6 +1,8 @@
 repeat wait(10) until game:IsLoaded()
 script_key = "ipXBywOqWcuQMMEBBCmVrvDBXrSRfJLd";
 _G.GDO_CANNON_TYCOON_EVENT = true
+_G.GUSE_CANNON_CONSUMABLES = true
+_G.GUSE_HELLFIRE_CORES = true
 _G.GCONVERT_HELLFIRE_CRYSTALS = true
 _G.GCANNON_TYCOON_FPS = 5
 _G.GHATCH_CHARGED_EGGS = true
@@ -15,7 +17,6 @@ _G.GMAIL_ITEMS = {
   ["All Huges"] = {Class = "Pet", Id = "All Huges", Amount = 1},
   ["Hype Egg 2 "] = {Class = "Lootbox", Id = "Hype Egg 2", MinAmount = 1},
   ["Hype Egg"] = {Class = "Lootbox", Id = "Hype Egg", MinAmount = 1},
-  ["Hellfire Cores"] = {Class = "Misc", Id = "Hellfire Core", MinAmount = 100},
   ["Hellfire Gifts"] = {Class = "Lootbox", Id = "Hellfire Gift", MinAmount = 100},
   ["Daycare egg"] = {Class = "Egg", Id = "Huge Machine Egg 4", MinAmount = 1},
   ["Secret pet1"] = {Class = "Pet", Id = "Rainbow Swirl", MinAmount = 1, AllVariants = true},
