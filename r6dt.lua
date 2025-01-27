@@ -18,7 +18,6 @@ _G.GHOLD_BUNDLES = false
 _G.GMAX_ZONE_UPGRADE_COST = 200000
 _G.GPOTIONS = {"Coins","Lucky","Treasure Hunter","Walkspeed","Diamonds","Damage"}
 _G.GPOTIONS_MAX_TIER = 19
-_G.GUSE_SPRINKLERS = true
 _G.GUSE_FLAGS = {"Hasty Flag"}
 _G.GENCHANTS = {"Lucky Eggs", "Lucky Eggs", "Lucky Eggs", "Coins", "Fortune", "Strong Pets"}
 _G.GWEBHOOK_USERID = "" -- your discord userID, not your name. numerical id.
