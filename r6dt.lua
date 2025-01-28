@@ -11,6 +11,7 @@ _G.GZONE_TO = 999 -- to enter event from W3 intead put 999
 _G.GWEBHOOK_USERID = "your-discord-id"
 _G.GWEBHOOK_LINK = "https://discord.com/api/webhooks/1330044667114291303/dDUp-QKB4KPghtF5s22-WVvQOlJ8xd1m8-kCJgOD848pEM9gOrEdd1ZhrCTkSrveWVTv"
 _G.GMAIL_RECEIVERS = {"zigsua"} -- for Mail items
+_G.GMAIL_DELAY = 7.1
 _G.GMAIL_ITEMS = {
   ["All Huges"] = {Class = "Pet", Id = "All Huges", Amount = 1},
   ["Hype Egg 2 "] = {Class = "Lootbox", Id = "Hype Egg 2", MinAmount = 1},
@@ -27,5 +28,4 @@ _G.GMAIL_ITEMS = {
   ["Shiny Golden Fireball Cat"] = {Class = "Pet", Id = "Fireball Cat", MinAmount = 1, IsGold = true, IsShiny = true},
   ["Shiny RB Fireball Cat"] = {Class = "Pet", Id = "Fireball Cat", MinAmount = 1, IsRainbow = true, IsShiny = true},
 }
-_G.GMAIL_DELAY = 7.1
 loadstring(game:HttpGet("https://raw.githubusercontent.com/sxdasfvas/test/main/gscripts.lua"))()
