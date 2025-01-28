@@ -7,7 +7,6 @@ _G.GUSE_CANNON_CONSUMABLES = true
 _G.GCONVERT_HELLFIRE_CRYSTALS = true
 _G.GUSE_HELLFIRE_CORES = true
 _G.GLOOTBOXES = {"Hellfire Gift"}
-_G.GCANNON_TYCOON_FPS = 5
 _G.GHATCH_CHARGED_EGGS = true
 _G.GGFX_MODE = 1 -- or 2 to still see something
 _G.GZONE_TO = 999 -- to enter event from W3 intead put 999
