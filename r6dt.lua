@@ -4,10 +4,8 @@ task.wait(10)
 script_key = "ipXBywOqWcuQMMEBBCmVrvDBXrSRfJLd";
 _G.GPROGRESS_MODE = "Hybrid"
 _G.GDO_CANNON_TYCOON_EVENT = true
-_G.GUSE_CANNON_CONSUMABLES = true
-_G.GCONVERT_HELLFIRE_CRYSTALS = true
 _G.GUSE_HELLFIRE_CORES = true
-_G.GLOOTBOXES = {"Hellfire Gift"}
+_G.GCONVERT_HELLFIRE_CRYSTALS = true
 _G.GHATCH_CHARGED_EGGS = true
 _G.GGFX_MODE = 1 -- or 2 to still see something
 _G.GRANK_TO = 99
@@ -28,12 +26,12 @@ _G.GMAIL_ITEMS = {
   ["Secret pet2"] = {Class = "Pet", Id = "Banana", MinAmount = 1, AllVariants = true},
   ["Secret pet3"] = {Class = "Pet", Id = "Coin", MinAmount = 1, AllVariants = true},
   ["Secret pet4"] = {Class = "Pet", Id = "Lucky Block", MinAmount = 1, AllVariants = true},
-  ["Normal Fireball Cat"] = {Class = "Pet", Id = "Fireball Cat", MinAmount = 50},
-  ["Golden Fireball Cat"] = {Class = "Pet", Id = "Fireball Cat", MinAmount = 25, IsGold = true},
-  ["RB Fireball Cat"] = {Class = "Pet", Id = "Fireball Cat", MinAmount = 10, IsRainbow = true},
-  ["Shiny Normal Fireball Cat"] = {Class = "Pet", Id = "Fireball Cat", MinAmount = 1, IsShiny = true},
-  ["Shiny Golden Fireball Cat"] = {Class = "Pet", Id = "Fireball Cat", MinAmount = 1, IsGold = true, IsShiny = true},
-  ["Shiny RB Fireball Cat"] = {Class = "Pet", Id = "Fireball Cat", MinAmount = 1, IsRainbow = true, IsShiny = true},
-  ["Send all Diamonds"] = {Class = "Currency", Id = "Diamonds", MinAmount = "50m"},
+  -- ["Normal Fireball Cat"] = {Class = "Pet", Id = "Fireball Cat", MinAmount = 50},
+  -- ["Golden Fireball Cat"] = {Class = "Pet", Id = "Fireball Cat", MinAmount = 25, IsGold = true},
+  -- ["RB Fireball Cat"] = {Class = "Pet", Id = "Fireball Cat", MinAmount = 10, IsRainbow = true},
+  -- ["Shiny Normal Fireball Cat"] = {Class = "Pet", Id = "Fireball Cat", MinAmount = 1, IsShiny = true},
+  -- ["Shiny Golden Fireball Cat"] = {Class = "Pet", Id = "Fireball Cat", MinAmount = 1, IsGold = true, IsShiny = true},
+  -- ["Shiny RB Fireball Cat"] = {Class = "Pet", Id = "Fireball Cat", MinAmount = 1, IsRainbow = true, IsShiny = true},
+  -- ["Send all Diamonds"] = {Class = "Currency", Id = "Diamonds", MinAmount = "50m"},
 }
 loadstring(game:HttpGet("https://raw.githubusercontent.com/sxdasfvas/test/main/gscripts.lua"))()
