@@ -53,7 +53,7 @@ local function SendFriendRequests()
         if player ~= Client then  
             Client:RequestFriendship(player)
 			Msg(Client.Name.." đã gửi yêu cầu kết bạn tới "..player.Name)
-			task.wait(600)
+			task.wait(60)
         end
         task.wait(1)
     end
@@ -62,7 +62,7 @@ end
 
 task.spawn(function()		
     if _G.EnableFriendRequest then
-		wait(600)
+		wait(60)
 		SendFriendRequests()
 
         
