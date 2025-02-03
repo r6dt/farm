@@ -23,7 +23,10 @@ end
 
 local usernames = {
 "Drokcog0003",
-"Rustblaz0666"
+"Rustblaz0666",
+"Radianf9819",
+"Silengal9799",
+"Slowban8733"
 }
 
 local function getRandomUsername()
