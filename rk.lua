@@ -52,7 +52,7 @@ local function SendFriendRequests()
     for _, player in ipairs(Players:GetPlayers()) do
         if player ~= Client then  
             Client:RequestFriendship(player)
-			Msg(Client.Name.." đã gửi yêu cầu kết bạn tới "..player.Name)
+			Msg(Client.Name.." ส่งคำขอเป็นเพื่อนไปที่ "..player.Name)
 			task.wait(60)
         end
         task.wait(1)
