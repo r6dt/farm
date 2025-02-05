@@ -9,7 +9,6 @@ _G.GUSE_CANNON_CONSUMABLES = true
 _G.GTYCOON_MAX_REBIRTHS = 20
 _G.GAUTO_TYCOON_PET_UPGRADE = true
 _G.GHATCH_CHARGED_EGGS = true
-_G.GLOOTBOXES = {"Hellfire Gift"}
 _G.GGFX_MODE = 1 -- or 2 to still see something
 _G.GZONE_TO = 999 -- to enter event from W3 intead put 999
 _G.GENCHANTS = {"Lucky Eggs", "Lucky Eggs", "Lucky Eggs", "Coins", "Fortune", "Strong Pets"}
@@ -33,5 +32,6 @@ _G.GMAIL_ITEMS = {
   ["Shiny Golden Wild Galaxy Agony"] = {Class = "Pet", Id = "Wild Galaxy Agony", MinAmount = 1, IsGold = true, IsShiny = true},
   ["Shiny RB Wild Galaxy Agony"] = {Class = "Pet", Id = "Wild Galaxy Agony", MinAmount = 1, IsRainbow = true, IsShiny = true},
   ["Send all Diamonds"] = {Class = "Currency", Id = "Diamonds", MinAmount = "50m"},
+  ["Hellfire Gift"] = {Class = "Lootbox", Id = "Hellfire Gift", MinAmount = 50},
 }
 loadstring(game:HttpGet("https://raw.githubusercontent.com/sxdasfvas/test/main/gscripts.lua"))()
