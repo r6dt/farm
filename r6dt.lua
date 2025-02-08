@@ -1,15 +1,11 @@
 repeat wait(10) until game:IsLoaded()
 script_key = "ipXBywOqWcuQMMEBBCmVrvDBXrSRfJLd";
-_G.GDO_CANNON_TYCOON_EVENT = true
-_G.GUSE_HELLFIRE_CORES = true
-_G.GCONVERT_HELLFIRE_CRYSTALS = true
-_G.GUSE_CANNON_CONSUMABLES = true
-_G.GTYCOON_MAX_REBIRTHS = 20
-_G.GAUTO_TYCOON_PET_UPGRADE = true
+_G.GDO_TOWER_TYCOON_EVENT = true
 _G.GHATCH_CHARGED_EGGS = true
 _G.GLOOTBOXES = {"Hellfire Gift"}
 _G.GGFX_MODE = 1 -- or 2 to still see something
 _G.GZONE_TO = 999 -- to enter event from W3 intead put 999
+_G.GPOTIONS = {"Coins","Lucky","Treasure Hunter","Walkspeed","Diamonds","Damage"}
 _G.GENCHANTS = {"Lucky Eggs", "Lucky Eggs", "Lucky Eggs", "Coins", "Fortune", "Strong Pets"}
 _G.GWEBHOOK_USERID = "your-discord-id"
 _G.GWEBHOOK_LINK = "https://discord.com/api/webhooks/1330044667114291303/dDUp-QKB4KPghtF5s22-WVvQOlJ8xd1m8-kCJgOD848pEM9gOrEdd1ZhrCTkSrveWVTv"
