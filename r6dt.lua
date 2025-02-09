@@ -1,4 +1,6 @@
 repeat wait(10) until game:IsLoaded()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/r6dt/farm/main/Del-CoreGui.lua"))()
+task.wait(10)
 script_key = "ipXBywOqWcuQMMEBBCmVrvDBXrSRfJLd";
 _G.GDO_TOWER_TYCOON_EVENT = true
 _G.GCONVERT_VALENTINE_HEARTS = true
