@@ -2,6 +2,8 @@ repeat wait(10) until game:IsLoaded()
 script_key = "ipXBywOqWcuQMMEBBCmVrvDBXrSRfJLd";
 _G.GDO_TOWER_TYCOON_EVENT = true
 _G.GCONVERT_VALENTINE_HEARTS = true
+_G.GUSE_TOWER_TYCOON_BOOSTS = true
+_G.GAUTO_TYCOON_PET_UPGRADE = true
 _G.GHATCH_CHARGED_EGGS = true
 _G.GLOOTBOXES = {"Love Gift"}
 _G.GGFX_MODE = 1 -- or 2 to still see something
