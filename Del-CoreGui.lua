@@ -13,16 +13,10 @@ Players.PlayerAdded:Connect(function(player)
     end)
 end)
 
--- ซ่อนวัตถุทั้งหมดในเกมที่เป็น BasePart หรือ Part
-for _, v in pairs(game:GetDescendants()) do
-    if v:IsA("BasePart") or v:IsA("Part") then
-        v.Transparency = 1
-    end
-end
-
--- ปิด GUI ของผู้เล่นใน PlayerGui
+-- เช็คว่าเป็น LocalScript หรือไม่ (LocalPlayer ใช้ได้เฉพาะใน LocalScript)
 local localPlayer = Players.LocalPlayer
 if localPlayer then
+    -- ปิด GUI ของผู้เล่น
     for _, v in pairs(localPlayer.PlayerGui:GetChildren()) do
         if v:IsA("ScreenGui") then
             v.Enabled = false
@@ -35,6 +29,15 @@ for _, v in pairs(StarterGui:GetChildren()) do
     if v:IsA("ScreenGui") then
         v.Enabled = false
     end
+end
+
+-- ปิด GUI ใน CoreGui (บางอย่างอาจไม่ได้รับอนุญาตให้ปิด)
+for _, v in pairs(CoreGui:GetChildren()) do
+    pcall(function()
+        if v:IsA("ScreenGui") then
+            v.Enabled = false
+        end
+    end)
 end
 
 -- ลบทุกอย่างใน CoreGui (ใช้ pcall เพื่อป้องกัน error)
