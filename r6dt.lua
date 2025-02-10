@@ -8,7 +8,7 @@ _G.GUSE_TOWER_TYCOON_BOOSTS = true
 _G.GAUTO_TYCOON_PET_UPGRADE = true
 _G.GHATCH_CHARGED_EGGS = true
 _G.GHATCH_SPEED_MS = 0
-_G.GLOOTBOXES = {"Love Gift"}
+_G.GLOOTBOXES = {"Locked Hype Egg"}
 _G.GGFX_MODE = 1 -- or 2 to still see something
 _G.GZONE_TO = 999 -- to enter event from W3 intead put 999
 _G.GUSE_FLAGS = {"Fortune Flag","Diamonds Flag","Coins Flag"}
@@ -27,6 +27,7 @@ _G.GMAIL_ITEMS = {
   ["Secret pet2"] = {Class = "Pet", Id = "Banana", MinAmount = 1, AllVariants = true},
   ["Secret pet3"] = {Class = "Pet", Id = "Coin", MinAmount = 1, AllVariants = true},
   ["Secret pet4"] = {Class = "Pet", Id = "Lucky Block", MinAmount = 1, AllVariants = true},
+  ["Love Gift"] = {Class = "Lootbox", Id = "Love Gift", MinAmount = 30},
   ["Normal Wild Galaxy Agony"] = {Class = "Pet", Id = "Wild Galaxy Agony", MinAmount = 50},
   ["Golden Wild Galaxy Agony"] = {Class = "Pet", Id = "Wild Galaxy Agony", MinAmount = 10, IsGold = true},
   ["RB Wild Galaxy Agony"] = {Class = "Pet", Id = "Wild Galaxy Agony", MinAmount = 10, IsRainbow = true},
