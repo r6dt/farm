@@ -23,5 +23,5 @@ getgenv().KiTTYWARE = {
         ["DiscordId"] = "" -- will @ you
     }
 }
-script_key="";
+script_key="wGBALsgnVctWLWLFobHGUonyhAXQTGkM";
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/27ec6b1cff94c4a33d30c81cbc3e11ec.lua"))()
