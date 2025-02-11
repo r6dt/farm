@@ -1,6 +1,4 @@
 repeat wait(5) until game:IsLoaded()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/r6dt/farm/main/Del-CoreGui.lua"))()
-task.wait(5)
 getgenv().KiTTYWARE = {
     ["Optimize"] = true, -- optimize game
     ["GuiStats"] = true, -- "stats in a gui duh" - Nazov 2024
