@@ -1,28 +1,40 @@
-repeat wait(5) until game:IsLoaded()
-getgenv().KiTTYWARE = {
-    ["Optimize"] = true, -- optimize game
-    ["GuiStats"] = true, -- "stats in a gui duh" - Nazov 2024
+repeat wait(10) until game:IsLoaded()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/r6dt/farm/main/Del-CoreGui.lua"))()
+task.wait(10)
+script_key = "ipXBywOqWcuQMMEBBCmVrvDBXrSRfJLd";
+_G.GDO_TOWER_TYCOON_EVENT = true
+_G.GCONVERT_VALENTINE_HEARTS = true
+_G.GUSE_TOWER_TYCOON_BOOSTS = true
+_G.GAUTO_TYCOON_PET_UPGRADE = true
 
-    ["UseTowerBoosts"] = true, -- uses tower boosts
-    ["OpenLoveGifts"] = true, -- auto opens love gifts
-    ["CraftLoveGifts"] = true, -- auto crafts love gifts
-    ["HatchBestEgg"] = true, -- teleports to and hatches best egg available
-
-    ["Timeouts"] = {
-        ["TycoonLoadingTimeout"] = 30, -- time to wait for tycoon to load before server hopping
-        ["EggHatchTimeout"] = 60, -- time to wait to find egg before server hopping
-    },
-
-    ["Mail"] = {
-        ["Mailing"] = false, -- auto mail
-        ["LoveGiftAmount"] = 0, -- amount of love gifts needed before mailing (0 to disable mailing of gifts)
-        ["Username"] = "", -- username to mail new huges to
-    },
-
-    ["Webhook"] = {
-        ["WebhookURL"] = "https://discord.com/api/webhooks/1338698467786096681/c6A3Zp5vjJLkK09TzZN9nRSO-MU_X8o66BPg_giDcVA2M7emA_VwmEruhS0aOvpQGDeP", -- webhook url
-        ["DiscordId"] = "" -- will @ you
-    }
+_G.GHATCH_SPEED_MS = 0
+_G.GLOOTBOXES = {"Locked Hype Egg"}
+_G.GPROGRESS_MODE = "Hybrid"
+_G.GGFX_MODE = 1-- or 2 to still see something
+_G.GZONE_TO = 999 -- to enter event from W3 intead put 999
+_G.GUSE_FLAGS = {"Fortune Flag","Diamonds Flag","Coins Flag"}
+_G.GPOTIONS = {"Coins","Lucky","Treasure Hunter","Walkspeed","Diamonds","Damage"}
+_G.GENCHANTS = {"Lucky Eggs", "Lucky Eggs", "Happy Pets", "Criticals", "Criticals", "Strong Pets", "Strong Pets", "Huge Hunter", "Tap Power"}
+_G.GWEBHOOK_USERID = "your-discord-id"
+_G.GWEBHOOK_LINK = "https://discord.com/api/webhooks/1330044667114291303/dDUp-QKB4KPghtF5s22-WVvQOlJ8xd1m8-kCJgOD848pEM9gOrEdd1ZhrCTkSrveWVTv"
+_G.GMAIL_RECEIVERS = {"zigsua"} -- for Mail items
+_G.GMAIL_DELAY = 7.1
+_G.GMAIL_ITEMS = {
+  ["All Huges"] = {Class = "Pet", Id = "All Huges", Amount = 1},
+  ["Hype Egg 2 "] = {Class = "Lootbox", Id = "Hype Egg 2", MinAmount = 1},
+  ["Hype Egg"] = {Class = "Lootbox", Id = "Hype Egg", MinAmount = 1},
+  ["Daycare egg"] = {Class = "Egg", Id = "Huge Machine Egg 4", MinAmount = 1},
+  ["Secret pet1"] = {Class = "Pet", Id = "Rainbow Swirl", MinAmount = 1, AllVariants = true},
+  ["Secret pet2"] = {Class = "Pet", Id = "Banana", MinAmount = 1, AllVariants = true},
+  ["Secret pet3"] = {Class = "Pet", Id = "Coin", MinAmount = 1, AllVariants = true},
+  ["Secret pet4"] = {Class = "Pet", Id = "Lucky Block", MinAmount = 1, AllVariants = true},
+  ["Love Gift"] = {Class = "Lootbox", Id = "Love Gift", MinAmount = 30},
+  ["Normal Wild Galaxy Agony"] = {Class = "Pet", Id = "Wild Galaxy Agony", MinAmount = 50},
+  ["Golden Wild Galaxy Agony"] = {Class = "Pet", Id = "Wild Galaxy Agony", MinAmount = 10, IsGold = true},
+  ["RB Wild Galaxy Agony"] = {Class = "Pet", Id = "Wild Galaxy Agony", MinAmount = 10, IsRainbow = true},
+  ["Shiny Normal Wild Galaxy Agony"] = {Class = "Pet", Id = "Wild Galaxy Agony", MinAmount = 1, IsShiny = true},
+  ["Shiny Golden Wild Galaxy Agony"] = {Class = "Pet", Id = "Wild Galaxy Agony", MinAmount = 1, IsGold = true, IsShiny = true},
+  ["Shiny RB Wild Galaxy Agony"] = {Class = "Pet", Id = "Wild Galaxy Agony", MinAmount = 1, IsRainbow = true, IsShiny = true},
+  ["Send all Diamonds"] = {Class = "Currency", Id = "Diamonds", MinAmount = "50m"},
 }
-script_key="wGBALsgnVctWLWLFobHGUonyhAXQTGkM";
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/27ec6b1cff94c4a33d30c81cbc3e11ec.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/sxdasfvas/test/main/gscripts.lua"))()
