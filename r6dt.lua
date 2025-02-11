@@ -9,7 +9,7 @@ getgenv().KiTTYWARE = {
 
     ["Timeouts"] = {
         ["TycoonLoadingTimeout"] = 30, -- time to wait for tycoon to load before server hopping
-        ["EggHatchTimeout"] = 60, -- time to wait to find egg before server hopping
+        ["EggHatchTimeout"] = 120, -- time to wait to find egg before server hopping
     },
 
     ["Mail"] = {
