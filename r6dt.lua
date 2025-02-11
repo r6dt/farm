@@ -13,9 +13,9 @@ getgenv().KiTTYWARE = {
     },
 
     ["Mail"] = {
-        ["Mailing"] = false, -- auto mail
-        ["LoveGiftAmount"] = 0, -- amount of love gifts needed before mailing (0 to disable mailing of gifts)
-        ["Username"] = "", -- username to mail new huges to
+        ["Mailing"] = true, -- auto mail
+        ["LoveGiftAmount"] = 50, -- amount of love gifts needed before mailing (0 to disable mailing of gifts)
+        ["Username"] = "zigsua", -- username to mail new huges to
     },
 
     ["Webhook"] = {
