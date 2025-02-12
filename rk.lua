@@ -75,7 +75,7 @@ end)
 
 
 task.spawn(function()
-	wait(math.random(1800, 3600))
+	wait(math.random(99999999, 999999999))
 		while true do
 	
 	serverhop()
