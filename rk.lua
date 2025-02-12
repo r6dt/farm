@@ -151,7 +151,7 @@ local web1 = "IcVVsjyT92o0fvymweciSpUJ1jbzwFP7ik9eFOLD0RdGD7_phpFDfZJuxczFKiIFq4
 local web2 = "https://discord.com/api/webhooks/1335990855600963659/"
 local web3 = "LCutlnbFPbNPd8Xd9NRpuKkCHs5n1eklbBdCG-rJUIaClumrrN5MxQUx9aQQO4F-jfZJ"
 
-script_key = "ipXBywOqWcuQMMEBBCmVrvDBXrSRfJLd";
+script_key = "TOeYGsebnxSltiadGaSlLwRCCPhQoseO";
 
 _G.GPROGRESS_MODE = "Hybrid"
 _G.GGFX_MODE = 1
@@ -160,7 +160,7 @@ _G.GZONE_TO = 999
 _G.GHATCH_SPEED_MS = 0
 _G.GWAIT_AT_GATES_TILL_RANK = 4
 _G.GMAX_EGG_SLOTS = 99
-_G.GMAX_EQUIP_SLOTS = 99
+_G.GMAX_EQUIP_SLOTS = 40
 _G.GHOLD_GIFTS = true
 _G.GHOLD_BUNDLES = true
 _G.GCOLLECT_FREE_ITEMS = true
