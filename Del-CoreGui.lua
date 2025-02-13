@@ -1,11 +1,35 @@
-local runService = game:GetService("RunService")
-local starterGui = game:GetService("StarterGui")
+game.Players.PlayerAdded:Connect(function(player)
+    player.CharacterAdded:Connect(function(character)
+        for _, v in pairs(character:GetDescendants()) do
+            if v:IsA("BasePart") or v:IsA("Decal") then
+                v.Transparency = 1
+            end
+        end
+    end)
+end)
 
--- ปิดการแสดงผล 3D (จอมืด)
-runService:Set3dRenderingEnabled(false)
+for _, v in pairs(game:GetDescendants()) do
+    if v:IsA("Part") or v:IsA("BasePart") then
+        v.Transparency = 1
+    end
+end
 
--- ปิดแชททั้งหมด
-starterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Chat, false)
+for i,v in pairs(game.Players.LocalPlayer.PlayerGui:GetChildren()) do
+    if v:IsA("ScreenGui") then
+        v.Enabled = false
+    end
+end
 
--- ปิด UI อื่น ๆ เช่น Leaderboard, Health Bar
-starterGui:SetCoreGuiEnabled(Enum.CoreGuiType.All, false)
+for i, v in pairs(game:GetService("StarterGui"):GetChildren()) do
+    if v:IsA("ScreenGui") then
+        v.Enabled = false
+    end
+end
+
+for i, v in pairs(game:GetService("CoreGui"):GetChildren()) do
+    if v:IsA("ScreenGui") then
+        v.Enabled = false
+    end
+end
+
+game:GetService("RunService"):Set3dRenderingEnabled(false)
