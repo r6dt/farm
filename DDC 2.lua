@@ -1,5 +1,5 @@
 repeat wait(5) until game:IsLoaded()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/r6dt/farm/main/Del-CoreGui.lua"))()
+game:GetService("RunService"):Set3dRenderingEnabled(false)
 task.wait(5)
 script_key = "ipXBywOqWcuQMMEBBCmVrvDBXrSRfJLd";
 _G.GDO_TOWER_TYCOON_EVENT = true
