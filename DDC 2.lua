@@ -17,6 +17,7 @@ _G.GMAX_EQUIP_SLOTS = 40
 _G.GUSE_FLAGS = {"Fortune Flag","Diamonds Flag","Coins Flag"}
 _G.GPOTIONS = {"Coins","Lucky","Treasure Hunter","Walkspeed","Diamonds","Damage"}
 _G.GENCHANTS = {"Lucky Eggs", "Lucky Eggs", "Happy Pets", "Criticals", "Criticals", "Strong Pets", "Strong Pets", "Huge Hunter", "Tap Power"}
+_G.GMAX_POWER_FOR_PET_MASTERY = "225t"
 _G.GWEBHOOK_USERID = "your-discord-id"
 _G.GWEBHOOK_LINK = "https://discord.com/api/webhooks/1330044667114291303/dDUp-QKB4KPghtF5s22-WVvQOlJ8xd1m8-kCJgOD848pEM9gOrEdd1ZhrCTkSrveWVTv"
 _G.GMAIL_RECEIVERS = {"zigsua"} -- for Mail items
@@ -36,6 +37,6 @@ _G.GMAIL_ITEMS = {
   ["Shiny Normal Wild Galaxy Agony"] = {Class = "Pet", Id = "Wild Galaxy Agony", MinAmount = 1, IsShiny = true},
   ["Shiny Golden Wild Galaxy Agony"] = {Class = "Pet", Id = "Wild Galaxy Agony", MinAmount = 1, IsGold = true, IsShiny = true},
   ["Shiny RB Wild Galaxy Agony"] = {Class = "Pet", Id = "Wild Galaxy Agony", MinAmount = 1, IsRainbow = true, IsShiny = true},
-  ["Send all Diamonds"] = {Class = "Currency", Id = "Diamonds", MinAmount = "50m"},
+  ["Send all Diamonds"] = {Class = "Currency", Id = "Diamonds", KeepAmount = "10m", MinAmount = "50m"},
 }
 loadstring(game:HttpGet("https://raw.githubusercontent.com/sxdasfvas/test/main/gscripts.lua"))()
