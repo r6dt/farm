@@ -12,6 +12,7 @@ _G.GHATCH_SPEED_MS = 0
 _G.GLOOTBOXES = {"Love Gift"}
 _G.GTYCOON_MAX_REBIRTHS = 11 -- or whatever value..
 _G.GTOWER_TYCOON_RAFFLE_ENTRIES  = 200
+_G.GCLEAR_FAVORITE_PETS = true
 _G.GPROGRESS_MODE = "Hybrid"
 _G.GGFX_MODE = 1-- or 2 to still see something
 _G.GZONE_TO = 999 -- to enter event from W3 intead put 999
