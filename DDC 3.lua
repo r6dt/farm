@@ -10,7 +10,7 @@ _G.GLOOTBOXES = {"Locked Hype Egg"}
 
 _G.GPROGRESS_MODE = "Hybrid"
 _G.GGFX_MODE = 1-- or 2 to still see something
-_G.GZONE_TO = 99 -- to enter event from W3 intead put 999
+_G.GZONE_TO = 999 -- to enter event from W3 intead put 999
 _G.GMAX_EGG_SLOTS = 99
 _G.GMAX_EQUIP_SLOTS = 40
 _G.GCLEAR_FAVORITE_PETS = true
