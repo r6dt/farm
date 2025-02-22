@@ -13,7 +13,6 @@ _G.GGFX_MODE = 1-- or 2 to still see something
 _G.GZONE_TO = 999 -- to enter event from W3 intead put 999
 _G.GMAX_EGG_SLOTS = 99
 _G.GMAX_EQUIP_SLOTS = 40
-_G.GMAX_POWER_FOR_PET_MASTERY_VIA_FUSING = "240t"
 _G.GCLEAR_FAVORITE_PETS = true
 _G.GHATCH_SPEED_MS = 0
 _G.GUSE_FLAGS = {"Fortune Flag","Diamonds Flag","Coins Flag"}
