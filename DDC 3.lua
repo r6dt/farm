@@ -2,22 +2,14 @@ repeat wait(10) until game:IsLoaded()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/r6dt/farm/main/Del-CoreGui.lua"))()
 task.wait(10)
 script_key = "CCoBtvmHdaVRQglIcxjEzwxltMewjQUz";
-_G.GDO_TOWER_TYCOON_EVENT = true
-_G.GCONVERT_VALENTINE_HEARTS = true
-_G.GUSE_TOWER_TYCOON_BOOSTS = true
-_G.GAUTO_TYCOON_PET_UPGRADE = true
-_G.GUSE_REBIRTH_TOKENS = true
-_G.GTOWER_TYCOON_FPS = 5
-_G.GHATCH_SPEED_MS = 0
-_G.GLOOTBOXES = {"Love Gift"}
-_G.GTYCOON_MAX_REBIRTHS = 11 -- or whatever value..
-_G.GTOWER_TYCOON_RAFFLE_ENTRIES  = 200
-_G.GCLEAR_FAVORITE_PETS = true
 _G.GPROGRESS_MODE = "Hybrid"
 _G.GGFX_MODE = 1-- or 2 to still see something
 _G.GZONE_TO = 999 -- to enter event from W3 intead put 999
 _G.GMAX_EGG_SLOTS = 99
 _G.GMAX_EQUIP_SLOTS = 40
+_G.GLOOTBOXES = {"Locked Hype Egg"}
+_G.GCLEAR_FAVORITE_PETS = true
+_G.GHATCH_SPEED_MS = 0
 _G.GUSE_FLAGS = {"Fortune Flag","Diamonds Flag","Coins Flag"}
 _G.GPOTIONS = {"Coins","Lucky","Treasure Hunter","Walkspeed","Diamonds","Damage"}
 _G.GENCHANTS = {"Lucky Eggs", "Lucky Eggs", "Happy Pets", "Criticals", "Criticals", "Strong Pets", "Strong Pets", "Huge Hunter", "Tap Power"}
