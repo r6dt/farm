@@ -7,6 +7,12 @@ _G.GEVENT_FPS  = 5
 _G.GDO_CARD_WORLD_EVENT = true
 _G.GCARD_PACK_TO_BUY = "Retro Pack"
 _G.GLOOTBOXES = {"Locked Hype Egg"}
+_G.GEVENT_UPGRADES = {
+    "CheaperPacks",
+    "CheaperTradeIns",
+    "BonusCardChance",
+    "PurchaseMorePacks"
+}
 
 _G.GPROGRESS_MODE = "Hybrid"
 _G.GGFX_MODE = 1-- or 2 to still see something
