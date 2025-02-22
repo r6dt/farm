@@ -2,16 +2,17 @@ repeat wait(10) until game:IsLoaded()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/r6dt/farm/main/Del-CoreGui.lua"))()
 task.wait(10)
 script_key = "ipXBywOqWcuQMMEBBCmVrvDBXrSRfJLd";
+
 _G.GEVENT_FPS  = 5
 _G.GDO_CARD_WORLD_EVENT = true
 _G.GCARD_PACK_TO_BUY = "Retro Pack"
 _G.GLOOTBOXES = {"Locked Hype Egg"}
+
 _G.GPROGRESS_MODE = "Hybrid"
 _G.GGFX_MODE = 1-- or 2 to still see something
 _G.GZONE_TO = 999 -- to enter event from W3 intead put 999
 _G.GMAX_EGG_SLOTS = 99
 _G.GMAX_EQUIP_SLOTS = 40
-_G.GMAX_POWER_FOR_PET_MASTERY_VIA_FUSING = "240t"
 _G.GCLEAR_FAVORITE_PETS = true
 _G.GHATCH_SPEED_MS = 0
 _G.GUSE_FLAGS = {"Fortune Flag","Diamonds Flag","Coins Flag"}
