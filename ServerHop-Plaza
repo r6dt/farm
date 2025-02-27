@@ -62,7 +62,10 @@ local function teleportToMostPopulatedServer(placeId, retryLimit, userIdsToExclu
 end
 
 -- รายการ UserId ที่ต้องการหลีกเลี่ยง
-local userIdsToExclude = { 7519675360, 7224796491 }
+local userIdsToExclude = {
+    7519675360,
+    7224796491
+}
 
 -- วาร์ปครั้งแรกทันทีเมื่อรันสคริปต์
 task.wait(1)
