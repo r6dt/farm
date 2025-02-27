@@ -3,7 +3,7 @@ getgenv().Settings = {
     Seller = {
         Active = true,
         ["Items"] = {
-            ["Fantasy Pack"] = {Price = 350000, Amount = 30000},
+            ["Fantasy Pack"] = {Price = 320000, Amount = 30000},
         },
         ["Switch Servers"] = {Active = true, MinuteDelay = 120, OnlyPRO = false},
         ["Webhook"] = {Active = true, URL = "https://discord.com/api/webhooks/1325920311383822437/08GYxq_ZQ51giyDV1OPHEohEJaZXrd0_Sfk3p5RE-QyioHBPPxqV1hWkr2FZe9ZsEgnh"},
