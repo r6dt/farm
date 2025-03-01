@@ -4,6 +4,10 @@ getgenv().Settings = {
         Active = true,
         ["Items"] = {
             ["Fantasy Pack"] = {Price = "25%", Amount = 15000},
+            ["Huge Arcade Dog Card"] = {Price = "5%", AllTypes = true},
+            ["Huge Blurred Axolotl Card"] = {Price = "5%", AllTypes = true},
+            ["Huge Nightmare Dog Card"] = {Price = "5%", AllTypes = true},
+            ["Titanic Cupcake Pegasus Card"] = {Price = "5%", AllTypes = true},
         },
         ["Switch Servers"] = {Active = true, MinuteDelay = 120, OnlyPRO = false},
         ["Webhook"] = {Active = true, URL = "https://discord.com/api/webhooks/1325920311383822437/08GYxq_ZQ51giyDV1OPHEohEJaZXrd0_Sfk3p5RE-QyioHBPPxqV1hWkr2FZe9ZsEgnh"},
