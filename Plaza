@@ -3,7 +3,7 @@ getgenv().Settings = {
     Seller = {
         Active = true,
         ["Items"] = {
-            ["BIG Pack"] = {Price = "15%", Amount = 1000},
+            ["BIG Pack"] = {Price = "15%", Amount = 15000},
             ["Huge Arcade Dog Card"] = {Price = "5%", AllTypes = true},
             ["Huge Blurred Axolotl Card"] = {Price = "5%", AllTypes = true},
             ["Huge Nightmare Dog Card"] = {Price = "5%", AllTypes = true},
