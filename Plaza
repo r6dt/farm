@@ -4,6 +4,7 @@ getgenv().Settings = {
         Active = true,
         ["Items"] = {
             ["BIG Pack"] = {Price = 300000, Amount = 15000},
+            ["Fantasy Pack"] = {Price = 150000, Amount = 15000},
             ["Huge Arcade Dog Card"] = {Price = "5%", AllTypes = true},
             ["Huge Blurred Axolotl Card"] = {Price = "5%", AllTypes = true},
             ["Huge Nightmare Dog Card"] = {Price = "5%", AllTypes = true},
