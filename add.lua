@@ -3,7 +3,7 @@ local Client = Players.LocalPlayer
 
 _G.EnableFriendRequest = true
 _G.EnableAutoAcceptFriendRequest = true
-local interval = 60
+local interval = 300
 
 local function SendFriendRequests()
     for _, player in ipairs(Players:GetPlayers()) do
