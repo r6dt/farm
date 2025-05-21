@@ -34,7 +34,7 @@ end
 spawn(function()
     print('============== << STARTING CHECK >> ==============')
     while true do
-        task.wait(5)
+        task.wait(30)
         if #PlayersTable > 0 then
             for i = #PlayersTable, 1, -1 do -- นับย้อนเพื่อ table.remove() ปลอดภัย
                 local playerName = PlayersTable[i]
