@@ -5,7 +5,6 @@ local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 local PlayersTable = {}
 local SentRequests = {}     -- บันทึกเวลาที่ส่งคำขอครั้งล่าสุด
-local LastLogTime = {}      -- บันทึกเวลาที่แสดง log ล่าสุด
 local COOLDOWN_TIME = 300   -- หน่วงเวลา 300 วินาที (5 นาที)
 
 -- เพิ่มผู้เล่นใหม่เข้าตาราง
@@ -51,7 +50,6 @@ spawn(function()
                     local userId = player.UserId
                     local currentTime = os.time()
                     local lastSent = SentRequests[userId] or 0
-                    local lastLog = LastLogTime[userId] or 0
 
                     local success, err = pcall(function()
                         if not LocalPlayer:IsFriendsWith(userId) and (currentTime - lastSent >= COOLDOWN_TIME) then
@@ -64,13 +62,8 @@ spawn(function()
                             })
                             LocalPlayer:RequestFriendship(player)
                             SentRequests[userId] = currentTime
-                        else
-                            -- ✅ แสดง log แค่ทุก 5 นาที
-                            if currentTime - lastLog >= COOLDOWN_TIME then
-                                print(player.Name .. " is already your friend or waiting cooldown.")
-                                LastLogTime[userId] = currentTime
-                            end
                         end
+                        -- ❌ ลบ print ของ cooldown/log ออกเรียบร้อยแล้ว
                     end)
 
                     if not success then
