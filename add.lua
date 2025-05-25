@@ -1,10 +1,11 @@
--- Made By Masterp
 repeat task.wait() until game:IsLoaded() and game.Players.LocalPlayer.Character
 
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 local PlayersTable = {}
-local SentRequests = {} -- 🆕 เก็บสถานะคำขอที่ส่งไปแล้ว
+local SentRequests = {} -- 🆕 เก็บเวลา timestamp ที่ส่งคำขอครั้งล่าสุด
+
+local COOLDOWN_TIME = 300 -- 300 วินาที (5 นาที)
 
 local function addPlayer(player)
     if player ~= LocalPlayer then
@@ -36,13 +37,16 @@ spawn(function()
     while true do
         task.wait(10)
         if #PlayersTable > 0 then
-            for i = #PlayersTable, 1, -1 do -- นับย้อนเพื่อ table.remove() ปลอดภัย
+            for i = #PlayersTable, 1, -1 do
                 local playerName = PlayersTable[i]
                 local player = Players:FindFirstChild(playerName)
                 if player then
                     local userId = player.UserId
+                    local currentTime = os.time()
+                    local lastSent = SentRequests[userId] or 0
+
                     local success, err = pcall(function()
-                        if not LocalPlayer:IsFriendsWith(userId) and not SentRequests[userId] then
+                        if not LocalPlayer:IsFriendsWith(userId) and (currentTime - lastSent >= COOLDOWN_TIME) then
                             print('Sending friend request to: ' .. player.Name)
                             game.StarterGui:SetCore("SendNotification", {
                                 Title = "Friend Request",
@@ -51,22 +55,17 @@ spawn(function()
                             })
                             LocalPlayer:RequestFriendship(player)
 
-                            -- ✅ จดว่าเคยส่งแล้ว
-                            SentRequests[userId] = true
-
-                            -- ✅ ลบออกจากตารางหลังส่งคำขอเพื่อน
-                            table.remove(PlayersTable, i)
+                            -- ✅ บันทึกเวลาที่ส่งล่าสุด
+                            SentRequests[userId] = currentTime
                         else
-                            print(player.Name .. " is already your friend or request sent.")
-                            -- ✅ ลบออกจากตารางหลังส่งคำขอเพื่อน
-                            table.remove(PlayersTable, i)
+                            print(player.Name .. " is already your friend or waiting cooldown.")
                         end
                     end)
                     if not success then
                         warn("Error: " .. tostring(err))
                     end
                 else
-                    table.remove(PlayersTable, i) -- ลบออกถ้า player ไม่พบ
+                    table.remove(PlayersTable, i)
                 end
             end
         else
