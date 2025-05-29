@@ -3,6 +3,8 @@ repeat task.wait() until game:IsLoaded() and game.Players.LocalPlayer.Character
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 local PlayersTable = {}
+local SentRequests = {}     -- บันทึกเวลาที่ส่งคำขอครั้งล่าสุด
+local COOLDOWN_TIME = 300   -- หน่วงเวลา 300 วินาที (5 นาที)
 
 -- เพิ่มผู้เล่นใหม่เข้าตาราง
 local function addPlayer(player)
@@ -45,10 +47,12 @@ spawn(function()
 
                 if player then
                     local userId = player.UserId
+                    local currentTime = os.time()
+                    local lastSent = SentRequests[userId] or 0
 
                     local success, err = pcall(function()
-                        if not LocalPlayer:IsFriendsWith(userId) then
-                            -- ✅ ส่งคำขอเพื่อนทันทีโดยไม่มี cooldown
+                        if not LocalPlayer:IsFriendsWith(userId) and (currentTime - lastSent >= COOLDOWN_TIME) then
+                            -- ✅ ส่งคำขอเพื่อน
                             print('Sending friend request to: ' .. player.Name)
                             game.StarterGui:SetCore("SendNotification", {
                                 Title = "Friend Request",
@@ -56,7 +60,9 @@ spawn(function()
                                 Duration = 5
                             })
                             LocalPlayer:RequestFriendship(player)
+                            SentRequests[userId] = currentTime
                         end
+                        -- ❌ ลบ print ของ cooldown/log ออกเรียบร้อยแล้ว
                     end)
 
                     if not success then
