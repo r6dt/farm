@@ -4,10 +4,8 @@ repeat task.wait() until game:IsLoaded() and game.Players.LocalPlayer.Character
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 local PlayersTable = {}
-local SentRequests = {}     -- บันทึกเวลาที่ส่งคำขอครั้งล่าสุด
-local COOLDOWN_TIME = 300   -- หน่วงเวลา 300 วินาที (5 นาที)
 
--- เพิ่มผู้เล่นใหม่เข้าตาราง
+-- ฟังก์ชันเพิ่มผู้เล่นใหม่เข้าตาราง
 local function addPlayer(player)
     if player ~= LocalPlayer then
         table.insert(PlayersTable, player.Name)
@@ -15,7 +13,7 @@ local function addPlayer(player)
     end
 end
 
--- ลบผู้เล่นออกจากตารางเมื่อออกจากเกม
+-- ฟังก์ชันลบผู้เล่นที่ออกเกมออกจากตาราง
 local function removePlayer(player)
     for i, v in pairs(PlayersTable) do
         if v == player.Name then
@@ -26,55 +24,45 @@ local function removePlayer(player)
     end
 end
 
--- เชื่อมต่อเหตุการณ์
+-- เชื่อมต่อเหตุการณ์เมื่อผู้เล่นเข้า/ออก
 Players.PlayerAdded:Connect(addPlayer)
 Players.PlayerRemoving:Connect(removePlayer)
 
--- ใส่ผู้เล่นที่อยู่แล้วในเกม
+-- เพิ่มผู้เล่นที่อยู่แล้วในเกมตอนเริ่ม
 print('============== << STARTING ADD ALL TO TABLE >> ==============')
 for _, player in pairs(Players:GetPlayers()) do
     addPlayer(player)
 end
 
--- วนตรวจสอบ
+-- ตรวจสอบสถานะเพื่อน (โดยไม่ส่งคำขอ)
 spawn(function()
-    print('============== << STARTING CHECK >> ==============')
+    print('============== << STARTING FRIEND STATUS CHECK >> ==============')
     while true do
         task.wait(10)
-        if #PlayersTable > 0 then
-            for i = #PlayersTable, 1, -1 do
-                local playerName = PlayersTable[i]
-                local player = Players:FindFirstChild(playerName)
+        for i = #PlayersTable, 1, -1 do
+            local playerName = PlayersTable[i]
+            local player = Players:FindFirstChild(playerName)
 
-                if player then
-                    local userId = player.UserId
-                    local currentTime = os.time()
-                    local lastSent = SentRequests[userId] or 0
-
-                    local success, err = pcall(function()
-                        if not LocalPlayer:IsFriendsWith(userId) and (currentTime - lastSent >= COOLDOWN_TIME) then
-                            -- ✅ ส่งคำขอเพื่อน
-                            print('Sending friend request to: ' .. player.Name)
-                            game.StarterGui:SetCore("SendNotification", {
-                                Title = "Friend Request",
-                                Text = player.Name,
-                                Duration = 5
-                            })
-                            LocalPlayer:RequestFriendship(player)
-                            SentRequests[userId] = currentTime
-                        end
-                        -- ❌ ลบ print ของ cooldown/log ออกเรียบร้อยแล้ว
-                    end)
-
-                    if not success then
-                        warn("Error: " .. tostring(err))
+            if player then
+                local userId = player.UserId
+                local success, err = pcall(function()
+                    if not LocalPlayer:IsFriendsWith(userId) then
+                        -- แสดง Notification ถ้ายังไม่เป็นเพื่อน
+                        print(player.Name .. " is NOT your friend yet.")
+                        game.StarterGui:SetCore("SendNotification", {
+                            Title = "ไม่ใช่เพื่อนกัน",
+                            Text = player.Name .. " ยังไม่ได้เป็นเพื่อนกับคุณ",
+                            Duration = 5
+                        })
                     end
-                else
-                    table.remove(PlayersTable, i) -- ถ้า player ออกจากเกม
+                end)
+
+                if not success then
+                    warn("Error checking friend status: " .. tostring(err))
                 end
+            else
+                table.remove(PlayersTable, i) -- เอาออกถ้าผู้เล่นออกจากเกม
             end
-        else
-            print("No players left in table.")
         end
     end
 end)
