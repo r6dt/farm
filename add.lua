@@ -4,7 +4,7 @@ local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 local PlayersTable = {}
 local SentRequests = {}     -- บันทึกเวลาที่ส่งคำขอครั้งล่าสุด
-local COOLDOWN_TIME = 300   -- หน่วงเวลา 300 วินาที (5 นาที)
+local COOLDOWN_TIME = 3600   -- หน่วงเวลา 300 วินาที (5 นาที)
 
 -- เพิ่มผู้เล่นใหม่เข้าตาราง
 local function addPlayer(player)
