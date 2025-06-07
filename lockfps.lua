@@ -1,2 +1,2 @@
-wait(60)
+wait(300)
 setfpscap(5)
