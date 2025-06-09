@@ -1,1 +1,1 @@
-
+setfpscap(5)
