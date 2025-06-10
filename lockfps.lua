@@ -31,5 +31,3 @@ for i, v in pairs(game:GetService("CoreGui"):GetChildren()) do
         v.Enabled = false
     end
 end
-
-game:GetService("RunService"):Set3dRenderingEnabled(false)
