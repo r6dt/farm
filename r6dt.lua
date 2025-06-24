@@ -9,7 +9,7 @@ script_key = "woDAiRnSvDHmTqjAOjFOaREQqMduBaog";
 getgenv().GMAX_MAIL_COST = "1m"
 
 getgenv().GDO_TOWER_DEFENSE = true
-getgenv().GTOWER_DEFENSE_INFINITY_PET = {"Safari Monkey","Electric Eel","Nuclear Dominus","Nightmare Cyclops","Arcade Angelus","Tech Samurai Axolotl","Abyssal Turtle","Crystal Giraffe","Blurred Owl"}
+getgenv().GTOWER_DEFENSE_INFINITY_PET = {"Electric Eel","Nuclear Dominus","Nightmare Cyclops","Arcade Angelus","Tech Samurai Axolotl","Abyssal Turtle","Crystal Giraffe","Blurred Owl"}
 getgenv().GTOWER_DEFENSE_AMOUNT_OF_CHEAP_TOWERS_TO_PLACE_FIRST = 3
 getgenv().GTOWER_DEFENSE_HARDCORE_MODE = false
 
