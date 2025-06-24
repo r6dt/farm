@@ -2,7 +2,7 @@ repeat wait(10) until game:IsLoaded()
 
 spawn(function()
 wait(20)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/r6dt/farm/main/x2"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/r6dt/farm/main/x2speed.lua"))()
 end)
 
 script_key = "woDAiRnSvDHmTqjAOjFOaREQqMduBaog";
