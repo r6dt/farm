@@ -1,17 +1,16 @@
-repeat wait(10) until game:IsLoaded()
-
 spawn(function()
 wait(20)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/r6dt/farm/main/x2speed.lua"))()
 end)
 
+repeat wait(10) until game:IsLoaded()
 script_key = "woDAiRnSvDHmTqjAOjFOaREQqMduBaog";
 -- getgenv().GRANK_FIRST = true
 -- getgenv().GEVENT_FPS = 5
 getgenv().GMAX_MAIL_COST = "1m"
 
 getgenv().GDO_TOWER_DEFENSE = true
-getgenv().GTOWER_DEFENSE_INFINITY_PET = getgenv().GTOWER_DEFENSE_INFINITY_PET = {"Mechanical Griffin","Zeus Bear","Rich Corgi","TNT Capybara","Nuclear Dominus","Arcade Angelus","Nightmare Cyclops","Forged Armadillo","Electric Eel","Comet Dragon","Shadow Pegasus","Torpedo Cat","Frostbyte Griffin","Tech Samurai Axolotl","Demolition Panda"}
+getgenv().GTOWER_DEFENSE_INFINITY_PET = getgenv().GTOWER_DEFENSE_INFINITY_PET = {"Frostbyte Griffin","Nuclear Dominus","Electric Eel","Demolition Panda"}
 getgenv().GTOWER_DEFENSE_AMOUNT_OF_CHEAP_TOWERS_TO_PLACE_FIRST = 3
 getgenv().GTOWER_DEFENSE_HARDCORE_MODE = false
 
