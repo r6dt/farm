@@ -98,7 +98,7 @@ task.spawn(function()
 	local itemsToTrack = {
 	
 		{ id = "Blurred Owl", guiName = "Item3", row = 1, col = 0, color = Color3.fromRGB(0, 255, 255) },		-- ฟ้า
-		{ id = "Nightmare Cyclops", guiName = "Item4", row = 1, col = 1, color = Color3.fromRGB(0, 255, 255) }, -- เงิน
+		{ id = "Nightmare Cyclops", guiName = "Item4", row = 1, col = 1, color = Color3.fromRGB(192,192,192) }, -- เงิน
 		{ id = "Arcade Angelus", guiName = "Item1", row = 0, col = 0, color = Color3.fromRGB(255, 165, 0) },	-- ส้ม
 		{ id = "Nuclear Dominus", guiName = "Item2", row = 0, col = 1, color = Color3.fromRGB(255, 255, 255) },	-- ขาว
 	}
