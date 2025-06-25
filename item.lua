@@ -18,8 +18,7 @@ task.spawn(function()
         local petIds = {
             "Nuclear Dominus",
             "Blurred Owl",
-            "Nightmare Cyclops",
-			"Arcade Angelus"
+            "Nightmare Cyclops"
         }
 
         -- 🎁 ตั้งค่าผู้รับ + ข้อความ
