@@ -1,11 +1,7 @@
 spawn(function()
 wait(10)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/r6dt/farm/main/item.lua"))()
-end)
-
-spawn(function()
-wait(10)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/r6dt/farm/main/x2speed.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/r6dt/farm/main/item.lua"))()  
 end)
 
 script_key = "woDAiRnSvDHmTqjAOjFOaREQqMduBaog";
